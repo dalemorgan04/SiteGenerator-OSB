@@ -1,0 +1,33 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+//Theme
+$primary: #ffda00;
+$secondary: #E4572E;
+$warning: #ffda00;
+$danger: #E4572E;
+$success: #17BEBB;
+$info: #3F88C5;
+$dark: #2E282A;
+$light: white;
+$font-header: 'Playfair Display', serif;
+
+h1 {
+    font-family: $font-header;
+}
+
+//Floating accent
+.accent {
+    position:relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top:-10px;
+        left: 0;
+        width: 100px;
+        height: 10px;
+        background: $primary;
+    }
+}
