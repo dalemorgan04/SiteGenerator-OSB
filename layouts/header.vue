@@ -1,20 +1,19 @@
 <template>
   <header>
-    <app-nav /> 
+    <app-nav />
   </header>
 </template>
 
 <script>
-import AppNav from './nav.vue'    
+import AppNav from './nav.vue'
 export default {
-
-    components: {
-        'app-nav': AppNav
-    },
-    data () {
-        return {}
-    },
-    methods: {}
+  components: {
+    'app-nav': AppNav
+  },
+  data() {
+    return {}
+  },
+  methods: {}
 }
 </script>
 
@@ -22,11 +21,11 @@ export default {
 @import '../assets/theme.scss';
 
 header {
-    text-align: center;
-    background: $primary;
+  text-align: center;
+  background: $primary;
 }
 
 h1 {
-    color: $secondary;
+  color: $secondary;
 }
 </style>

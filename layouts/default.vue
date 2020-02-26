@@ -1,8 +1,5 @@
 <template>
-  <div
-    id="app"
-    class="d-flex flex-column"
-  >    
+  <div id="app" class="d-flex flex-column">
     <app-header />
 
     <main role="main">
@@ -14,37 +11,34 @@
 </template>
 
 <script>
-
+import Home from '../pages/index.vue'
 import AppHeader from './header.vue'
 import AppFooter from './footer.vue'
-import Home from '../pages/index.vue'
 
 export default {
-
-    components: {
-        'app-header': AppHeader,
-        //'app-nav': AppNav,
-        'app-footer': AppFooter,
-        'home' : Home
-    },
-    data () {
-        return {}
-    },
-    methods: {}
-
+  components: {
+    'app-header': AppHeader,
+    // 'app-nav': AppNav,
+    'app-footer': AppFooter,
+    home: Home
+  },
+  data() {
+    return {}
+  },
+  methods: {}
 }
 </script>
 
 <style lang="scss">
-    @import '../assets/theme.scss';
-    @import 'node_modules/bootstrap/scss/bootstrap';
-    @import 'node_modules/bootstrap-vue/src/index.scss';
-    
-    #app {
-        height: 100vh;
-    }
+@import '../assets/theme.scss';
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
 
-    main {
-        flex: 1 0 auto;
-    }
+#app {
+  height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
 </style>
