@@ -1,9 +1,10 @@
 <template>
   <div>
-    <section
-      class="jumbotron-container d-flex flex-row justify-content-between"
-    >
-      <div class="container-left d-flex flex-column justify-content-center p-5">
+    <section class="jumbotron-container">
+      <div class="container-image">
+        <img src="../assets/images/lounge.jpg" />
+      </div>
+      <div class="container-text">
         <h1 class="jumbotron-heading accent">
           Inspiring Architecural Design Solutions for your home
         </h1>
@@ -12,11 +13,6 @@
           uplifting design with the overall aim of making that perfect "happy
           home" for you to enjoy
         </p>
-      </div>
-      <div class="container-right d-flex justify-content-center flex-column">
-        <div class="container-image">
-          <img src="../assets/images/lounge.jpg" />
-        </div>
       </div>
     </section>
 
@@ -52,12 +48,51 @@
 .jumbotron-container {
   padding-top: 100px;
   height: 100vh;
+  position: relative;
 
   jumbotron-heading {
     font-size: 50px;
     color: $dark;
   }
 
+  .container-image img {
+    width: 100%;
+    height: auto;
+  }
+  .container-text {
+  }
+}
+
+// .summary-container {
+//   margin: 100px 0;
+//   text-align: center;
+
+//   .container-left,
+//   .container-right {
+//     flex: 1 1 100%;
+//   }
+
+//   .container-left {
+//     padding: 0 100px;
+
+//     .summary-content {
+//       flex: 0 0 auto;
+//       max-width: 400px;
+//       text-align: justify;
+//       margin: 0 auto;
+//       vertical-align: central;
+//     }
+//   }
+
+//   .container-image {
+//     img {
+//       width: 100%;
+//       height: auto;
+//     }
+//   }
+// }
+
+@media (min-width: $tablet) {
   .container-left {
     flex: 1 1 50%;
     z-index: 2;
@@ -77,32 +112,6 @@
   }
 }
 
-.summary-container {
-  margin: 100px 0;
-  text-align: center;
-
-  .container-left,
-  .container-right {
-    flex: 1 1 100%;
-  }
-
-  .container-left {
-    padding: 0 100px;
-
-    .summary-content {
-      flex: 0 0 auto;
-      max-width: 400px;
-      text-align: justify;
-      margin: 0 auto;
-      vertical-align: central;
-    }
-  }
-
-  .container-image {
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
+@media (min-width: $desktop) {
 }
 </style>
