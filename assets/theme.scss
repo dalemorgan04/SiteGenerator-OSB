@@ -18,9 +18,13 @@ $dark: #2E282A;
 $light: white;
 $font-header: 'Playfair Display', serif;
 
-h1 {
-    font-family: $font-header;
+body{
+    background-color: white;
+    h1 {
+        font-family: $font-header;
+    }
 }
+
 
 //Floating accent
 .accent {
@@ -31,8 +35,23 @@ h1 {
         position: absolute;
         top:-10px;
         left: 0;
-        width: 100px;
-        height: 10px;
+        width: 80px;
+        height: 5px;
         background: $primary;
     }
+}
+@media (min-width: $tablet) {
+    .accent {
+        position:relative;
+    
+        &:before {
+            content: "";
+            position: absolute;
+            top:-10px;
+            left: 0;
+            width: 100px;
+            height: 10px;
+            background: $primary;
+        }
+    }   
 }

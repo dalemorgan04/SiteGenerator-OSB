@@ -1,5 +1,8 @@
 <template>
   <header>
+    <div class="brand">
+      <img src="../assets/images/logo.svg" />
+    </div>
     <app-nav />
   </header>
 </template>
@@ -21,8 +24,18 @@ export default {
 @import '../assets/theme.scss';
 
 header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 125px;
   text-align: center;
-  background: $primary;
+
+  .brand {
+    img {
+      width: 100%;
+      height: 75px;
+    }
+  }
 }
 
 h1 {

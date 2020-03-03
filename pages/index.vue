@@ -6,7 +6,7 @@
       </div>
       <div class="container-text">
         <h1 class="jumbotron-heading accent">
-          Inspiring Architecural Design Solutions for your home
+          Inspiring Architectural Design Solutions for your home
         </h1>
         <p>
           OSB-Architects work to create inspiring spaces through functional and
@@ -46,7 +46,7 @@
 <style lang="scss" scoped>
 @import '../assets/theme.scss';
 .jumbotron-container {
-  padding-top: 100px;
+  padding-top: 125px;
   height: 100vh;
   position: relative;
 
@@ -58,8 +58,14 @@
   .container-image img {
     width: 100%;
     height: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    margin-bottom: 20px;
   }
   .container-text {
+    padding: 10px;
+    h1 {
+      font-size: 30px;
+    }
   }
 }
 
