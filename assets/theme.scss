@@ -9,7 +9,7 @@ $desktop: 992px;
 
 //Theme
 $primary: #ffda00;
-$secondary: #E4572E;
+$secondary: #4ABDAC;
 $warning: #ffda00;
 $danger: #E4572E;
 $success: #17BEBB;
@@ -34,7 +34,7 @@ body{
         content: "";
         position: absolute;
         top:-10px;
-        left: 0;
+        left: 10px;
         width: 80px;
         height: 5px;
         background: $primary;
