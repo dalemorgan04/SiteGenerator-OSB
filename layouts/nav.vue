@@ -1,8 +1,7 @@
 <template>
-  <!-- Desktop Navbar -->
   <nav>
     <ul class="d-flex flex-row justify-content-center align-items-center">
-      <li><a href="#">Home</a></li>
+      <li class="selected"><a href="#">Home</a></li>
       <li><a href="#">Projects</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>
@@ -14,7 +13,7 @@
 @import '../assets/theme.scss';
 
 nav {
-  background-color: transparent;
+  background-color: white;
   height: 50px;
   width: 100%;
 
@@ -22,6 +21,7 @@ nav {
     margin: 0;
     padding: 0;
     text-align: center;
+    height: 100%;
     li {
       list-style-type: none;
       font-size: 20px;
