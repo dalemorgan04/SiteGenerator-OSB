@@ -35,8 +35,28 @@
         <h1><span>15</span> years experience</h1>
       </div>
     </section>
+
+    <section>
+      <projects></projects>
+    </section>
   </div>
 </template>
+
+<script>
+import Projects from '../components/projects.vue'
+
+export default {
+  components: {
+    projects: Projects
+  },
+  data() {
+    return {
+      projects: [{ image: '', imageAlt: '', text: 'this is a test' }]
+    }
+  },
+  methods: {}
+}
+</script>
 
 <style lang="scss" scoped>
 @import '../assets/theme.scss';
