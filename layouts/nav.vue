@@ -1,8 +1,8 @@
 <template>
   <nav>
     <ul class="d-flex flex-row justify-content-center align-items-center">
-      <li class="selected"><a href="#">Home</a></li>
-      <li><a href="#">Projects</a></li>
+      <li class="selected"><nuxt-link to="/">Home</nuxt-link></li>
+      <li><nuxt-link to="/project">Projects</nuxt-link></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>
     </ul>

@@ -1,5 +1,4 @@
-@import 'node_modules/bootstrap/scss/bootstrap';
-@import 'node_modules/bootstrap-vue/src/index.scss';
+//Fonts
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 
 //Screen widths
@@ -17,6 +16,11 @@ $info: #3F88C5;
 $dark: #2E282A;
 $light: white;
 $font-header: 'Playfair Display', serif;
+$shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+$enable-rounded: false;
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
 
 body{
     background-color: white;
@@ -24,7 +28,6 @@ body{
         font-family: $font-header;
     }
 }
-
 
 //Floating accent
 .accent {
@@ -34,7 +37,7 @@ body{
         content: "";
         position: absolute;
         top:-10px;
-        left: 10px;
+        left: 0;
         width: 80px;
         height: 5px;
         background: $primary;

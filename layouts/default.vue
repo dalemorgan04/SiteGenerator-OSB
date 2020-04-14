@@ -3,7 +3,7 @@
     <app-header />
 
     <main role="main">
-      <home />
+      <nuxt />
     </main>
 
     <app-footer />
@@ -11,7 +11,6 @@
 </template>
 
 <script>
-import Home from '../pages/index.vue'
 import AppHeader from './header.vue'
 import AppFooter from './footer.vue'
 
@@ -19,8 +18,7 @@ export default {
   components: {
     'app-header': AppHeader,
     // 'app-nav': AppNav,
-    'app-footer': AppFooter,
-    home: Home
+    'app-footer': AppFooter
   },
   data() {
     return {}

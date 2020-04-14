@@ -30,28 +30,60 @@
         applications and building regulations applications. Please browse our
         website for further information or get in touch via our contact page.
       </div>
-
-      <div class="summary-tag accent">
-        <h1><span>15</span> years experience</h1>
-      </div>
     </section>
 
-    <section>
-      <projects></projects>
+    <div class="section-title accent">
+      <h1>Project Highlights</h1>
+    </div>
+    <section class="projects-container">
+      <projects
+        v-for="project in projects"
+        v-bind:key="project.id"
+        v-bind:project="project"
+      ></projects>
+    </section>
+
+    <div class="section-title accent">
+      <h1>Testimonials</h1>
+    </div>
+    <section class="testimonials-container">
+      <testimonials
+        v-for="testimonial in testimonials"
+        v-bind:key="testimonial.id"
+        v-bind:testimonial="testimonial"
+      ></testimonials>
     </section>
   </div>
 </template>
 
 <script>
 import Projects from '../components/projects.vue'
+import Testimonials from '../components/testimonials.vue'
 
 export default {
   components: {
-    projects: Projects
+    projects: Projects,
+    testimonials: Testimonials
   },
   data() {
     return {
-      projects: [{ image: '', imageAlt: '', text: 'this is a test' }]
+      projects: [
+        {
+          id: 1,
+          image: 'house',
+          imageAlt: 'house',
+          title: 'Wollaton',
+          text: 'A one floor extension that is really really good, so there'
+        }
+      ],
+      testimonials: [
+        {
+          id: 1,
+          image: 'bob',
+          name: 'Bob McBobby',
+          text: 'She was so helpful and my house looks amazeballs'
+        }
+      ]
     }
   },
   methods: {}
@@ -64,6 +96,9 @@ export default {
 h1 {
   color: $dark;
   font-size: 30px;
+}
+.section-title {
+  margin: 50px 20px 10px 20px;
 }
 
 .jumbotron-container {
@@ -81,7 +116,7 @@ h1 {
     img {
       height: auto;
       width: 100%;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      box-shadow: $shadow;
       margin-bottom: 20px;
     }
   }
@@ -95,7 +130,8 @@ h1 {
     .inner-container-text {
       padding-bottom: 20px;
       .jumbotron-heading {
-        padding: 0 30px 0 10px;
+        margin-left: 10px;
+        padding-right: 30px;
         text-align: left;
       }
       p {
@@ -108,7 +144,7 @@ h1 {
 
 .summary-container {
   .summary-content {
-    padding: 40px;
+    padding: 0 40px;
     text-align: center;
   }
   .summary-tag {
@@ -117,6 +153,17 @@ h1 {
       color: $secondary;
     }
   }
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.testimonials-container {
+  padding: 0 20px;
 }
 
 @media (min-width: $tablet) {
