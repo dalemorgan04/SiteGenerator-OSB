@@ -18,7 +18,7 @@
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "^2.2.1",
     "intersection-observer": "^0.7.0",
-    "nuxt": "^2.11.0",
+    "nuxt": "^2.15.8",
     "nuxt-polyfill": "^1.0.3",
     "smoothscroll-polyfill": "^0.4.4",
     "url-polyfill": "^1.1.8",
